@@ -6,6 +6,7 @@ import dayjs from 'dayjs';
 import { config } from '@/config';
 import { Calendar } from '@/components/dashboard/overview/calendar';
 import { Top } from '@/components/dashboard/overview/top';
+import  Sides  from '@/components/dashboard/overview/sidebar';
 export const metadata = { title: `Home | Dashboard | ${config.site.name}` } satisfies Metadata;
 
 export default function Page(): React.JSX.Element {
@@ -16,9 +17,9 @@ export default function Page(): React.JSX.Element {
       <Top/>
       <Calendar/>
      </Grid>
-     {/* <Grid >
-      <Top/>
-     </Grid> */}
+     <Grid >
+     <Sides/>
+     </Grid>
     </Grid>
   );
 }
