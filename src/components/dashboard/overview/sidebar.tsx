@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
 
 export default function Sidebar(): React.JSX.Element {
   return (
@@ -18,21 +19,29 @@ export default function Sidebar(): React.JSX.Element {
               </span>
             </Box>
           </Box>
-          <Box>
-            <img />
-          </Box>
-        </Box>
+          <Box
+          component="img"
+          src="/assets/Chrissie.png"
+          sx={{ 
+            margin: '0 40px 20px 40px',  
+            display: 'flex', 
+            flexDirection: 'row', 
+            alignSelf: 'flex-start',  
+            width: 'fit-content',
+            boxSizing: 'border-box' 
+        }}/>
         <Box>
         </Box>
         <Box>
+            <Divider/>
           <Box>
             CONTACT INFORMATION
           </Box>
           <Box>
             <Box>
-              <Box >
-                <img />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/email.png"/>
               <span >
                 Email
               </span>
@@ -43,9 +52,9 @@ export default function Sidebar(): React.JSX.Element {
           </Box>
           <Box>
             <Box>
-              <Box >
-                <img  />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/phone.png"/>
               <span>
                 Phone
               </span>
@@ -56,9 +65,10 @@ export default function Sidebar(): React.JSX.Element {
           </Box>
           <Box>
             <Box>
-              <Box>
-                <img />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/address.png"
+         />
               <span>
                 Address
               </span>
@@ -73,6 +83,7 @@ export default function Sidebar(): React.JSX.Element {
       </Box>
       <Box>
       </Box>
+      <Divider/>
       <Box>
         <Box >
           CLINIC DETAILS
@@ -92,9 +103,17 @@ export default function Sidebar(): React.JSX.Element {
         <Box>
           <Box>
             <Box>
-              <Box>
-                <img />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/email.png"
+          sx={{ 
+            margin: '0 40px 20px 40px',  
+            display: 'flex', 
+            flexDirection: 'row', 
+            alignSelf: 'flex-start',  
+            width: 'fit-content',
+            boxSizing: 'border-box' 
+        }}/>
               <span>
                 Email
               </span>
@@ -105,9 +124,17 @@ export default function Sidebar(): React.JSX.Element {
           </Box>
           <Box>
             <Box>
-              <Box>
-                <img  />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/phone.png"
+          sx={{ 
+            margin: '0 40px 20px 40px',  
+            display: 'flex', 
+            flexDirection: 'row', 
+            alignSelf: 'flex-start',  
+            width: 'fit-content',
+            boxSizing: 'border-box' 
+        }}/>
               <span>
                 Phone
               </span>
@@ -118,9 +145,17 @@ export default function Sidebar(): React.JSX.Element {
           </Box>
           <Box>
             <Box>
-              <Box>
-                <img />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/address.png"
+          sx={{ 
+            margin: '0 40px 20px 40px',  
+            display: 'flex', 
+            flexDirection: 'row', 
+            alignSelf: 'flex-start',  
+            width: 'fit-content',
+            boxSizing: 'border-box' 
+        }}/>
               <span>
                 Address
               </span>
@@ -136,6 +171,7 @@ export default function Sidebar(): React.JSX.Element {
       </Box>
       <Box>
       </Box>
+      <Divider/>
       <Box>
         <Box >
           PET DETAILS
@@ -155,9 +191,10 @@ export default function Sidebar(): React.JSX.Element {
         <Box >
           <Box>
             <Box>
-              <Box>
-                <img/>
-              </Box>
+            <Box
+          component="img"
+          src="/assets/breed.png"
+         />
               <span>
                 Breed
               </span>
@@ -168,9 +205,10 @@ export default function Sidebar(): React.JSX.Element {
           </Box>
           <Box>
             <Box>
-              <Box>
-                <img />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/sex.png"
+         />
               <div>
                 Sex
               </div>
@@ -181,9 +219,10 @@ export default function Sidebar(): React.JSX.Element {
           </Box>
           <Box>
             <Box>
-              <Box>
-                <img/>
-              </Box>
+            <Box
+          component="img"
+          src="/assets/age.png"
+          />
               <span>
                 Age
               </span>
@@ -194,9 +233,10 @@ export default function Sidebar(): React.JSX.Element {
           </Box>
           <Box>
             <Box>
-              <Box>
-                <img />
-              </Box>
+            <Box
+          component="img"
+          src="/assets/birthday.png"
+         />
               <span >
                 Birthday
               </span>
@@ -209,6 +249,7 @@ export default function Sidebar(): React.JSX.Element {
       </Box>
       <Box>
       </Box>
+      <Divider/>
       <Box>
         <Box>
           <span>
@@ -223,6 +264,7 @@ export default function Sidebar(): React.JSX.Element {
           </span>
         </Box>
       </Box>
+    </Box>
     </Box>
   );
 }
