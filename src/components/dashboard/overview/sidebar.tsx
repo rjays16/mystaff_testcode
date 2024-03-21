@@ -71,7 +71,6 @@ export default function Sidebar(): React.JSX.Element {
           </div>
         </div>
       </div>
-     <Divider/>
     </div>
   </div>
   );
