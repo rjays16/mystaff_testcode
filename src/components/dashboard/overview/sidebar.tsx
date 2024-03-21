@@ -1,270 +1,78 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
+import { width } from '@mui/system';
+import styles from './styles.module.css';
 
 export default function Sidebar(): React.JSX.Element {
   return (
-    <Box>
-      <Box>
-        <Box>
-          <Box>
-            <Box>
-            </Box>
-            <Box>
-              <Box>
-                Chrissie Lee
-              </Box>
-              <span>
-                Client
-              </span>
-            </Box>
-          </Box>
-          <Box
-          component="img"
-          src="/assets/Chrissie.png"
-          sx={{ 
-            margin: '0 40px 20px 40px',  
-            display: 'flex', 
-            flexDirection: 'row', 
-            alignSelf: 'flex-start',  
-            width: 'fit-content',
-            boxSizing: 'border-box' 
-        }}/>
-        <Box>
-        </Box>
-        <Box>
-            <Divider/>
-          <Box>
-            CONTACT INFORMATION
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/email.png"/>
-              <span >
+    <div className={styles.frame51}>
+    <div className={styles.frame37}>
+      <div className={styles.frame40}>
+        <div className={styles.frame39}>
+          <div className={styles.frame13}>
+          </div>
+          <div className={styles.frame38}>
+            <div className={styles.chrissielee}>
+              Chrissie Lee
+            </div>
+            <span className={styles.client}>
+              Client
+            </span>
+          </div>
+        </div>
+      </div>
+      <Divider/>
+      <div className={styles.frame46}>
+        <div className={styles.contactinformation}>
+          CONTACT INFORMATION
+        </div>
+        <div className={styles.frame44}>
+          <div className={styles.frame42}>
+            <div className={styles.frame48}>
+              <div className={styles.icmessages}>
+                <img src="/assets/email.png" className={styles.vector79} />
+              </div>
+              <span className={styles.email}>
                 Email
               </span>
-            </Box>
-            <span>
+            </div>
+            <span className={styles.chrissieleegmailcom}>
               chrissielee@gmail.com
             </span>
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/phone.png"/>
-              <span>
+          </div>
+          <div className={styles.frame43}>
+            <div className={styles.frame47}>
+              <div className={styles.icphone}>
+                <img src='/assets/phone.png' className={styles.vector80} />
+              </div>
+              <span className={styles.phone}>
                 Phone
               </span>
-            </Box>
-            <span>
+            </div>
+            <span className={styles.numb1}>
               +01 234 567 8910
             </span>
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/address.png"
-         />
-              <span>
+          </div>
+          <div className={styles.frame4422}>
+            <div className={styles.frame4823}>
+              <div className={styles.icpin}>
+                <img src="/assets/address.png" className={styles.vector81} />
+              </div>
+              <span className={styles.address}>
                 Address
               </span>
-            </Box>
-            <span>
+            </div>
+            <span className={styles.california}>
               1st Avenue, Golden Street,<br />
               Springville Village,<br />
               San Diego, California
             </span>
-          </Box>
-        </Box>
-      </Box>
-      <Box>
-      </Box>
-      <Divider/>
-      <Box>
-        <Box >
-          CLINIC DETAILS
-        </Box>
-        <Box>
-          <Box>
-          </Box>
-          <Box>
-            <Box>
-              Silvervale Towers
-            </Box>
-            <span>
-              Los Angeles
-            </span>
-          </Box>
-        </Box>
-        <Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/email.png"
-          sx={{ 
-            margin: '0 40px 20px 40px',  
-            display: 'flex', 
-            flexDirection: 'row', 
-            alignSelf: 'flex-start',  
-            width: 'fit-content',
-            boxSizing: 'border-box' 
-        }}/>
-              <span>
-                Email
-              </span>
-            </Box>
-            <span>
-              branch1@gmail.com
-            </span>
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/phone.png"
-          sx={{ 
-            margin: '0 40px 20px 40px',  
-            display: 'flex', 
-            flexDirection: 'row', 
-            alignSelf: 'flex-start',  
-            width: 'fit-content',
-            boxSizing: 'border-box' 
-        }}/>
-              <span>
-                Phone
-              </span>
-            </Box>
-            <span>
-              +01 234 567 8910
-            </span>
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/address.png"
-          sx={{ 
-            margin: '0 40px 20px 40px',  
-            display: 'flex', 
-            flexDirection: 'row', 
-            alignSelf: 'flex-start',  
-            width: 'fit-content',
-            boxSizing: 'border-box' 
-        }}/>
-              <span>
-                Address
-              </span>
-            </Box>
-            <span>
-              4th Floor, RM 402,<br />
-              Blk 2, 13 Johnson Street,<br />
-              Silvervale Towers,<br />
-              Los Angeles, California 
-            </span>
-          </Box>
-        </Box>
-      </Box>
-      <Box>
-      </Box>
-      <Divider/>
-      <Box>
-        <Box >
-          PET DETAILS
-        </Box>
-        <Box >
-          <Box>
-          </Box>
-          <Box >
-            <Box>
-              Brownie
-            </Box>
-            <span>
-              Dog
-            </span>
-          </Box>
-        </Box>
-        <Box >
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/breed.png"
-         />
-              <span>
-                Breed
-              </span>
-            </Box>
-            <span>
-              French Bulldog
-            </span>
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/sex.png"
-         />
-              <div>
-                Sex
-              </div>
-            </Box>
-            <Box>
-              Male
-            </Box>
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/age.png"
-          />
-              <span>
-                Age
-              </span>
-            </Box>
-            <span >
-              10 months
-            </span>
-          </Box>
-          <Box>
-            <Box>
-            <Box
-          component="img"
-          src="/assets/birthday.png"
-         />
-              <span >
-                Birthday
-              </span>
-            </Box>
-            <span>
-              January 12, 2023
-            </span>
-          </Box>
-        </Box>
-      </Box>
-      <Box>
-      </Box>
-      <Divider/>
-      <Box>
-        <Box>
-          <span>
-            Reschedule Appointment
-          </span>
-        </Box>
-      </Box>
-      <Box>
-        <Box>
-          <span>
-            Cancel Appointment
-          </span>
-        </Box>
-      </Box>
-    </Box>
-    </Box>
+          </div>
+        </div>
+      </div>
+     <Divider/>
+    </div>
+  </div>
   );
 }

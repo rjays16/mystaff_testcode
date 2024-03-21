@@ -11,15 +11,14 @@ export const metadata = { title: `Home | Dashboard | ${config.site.name}` } sati
 
 export default function Page(): React.JSX.Element {
   return (
-    <Grid container spacing={9}>
-
-     <Grid lg={8} md={12} xs={12}  sx={{ height: '100%' }}>
-      <Top/>
-      <Calendar/>
-     </Grid>
-     <Grid >
-     <Sides/>
-     </Grid>
+    <Grid container spacing={2}> 
+      <Grid item lg={8} md={12} xs={12} sx={{ height: '100%' }}>
+        <Top />
+        <Calendar />
+      </Grid>
+      <Grid item lg={4} md={12} xs={12}> 
+        <Sides />
+      </Grid>
     </Grid>
   );
 }

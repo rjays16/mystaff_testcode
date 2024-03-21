@@ -1,0 +1,281 @@
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.search {
+  margin-right: 9.5px;
+  width: 1207px;
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: rgba(28, 28, 30, 0.4);
+}
+
+.appointments {
+  margin-bottom: 12px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #9D9C9C;
+}
+.june {
+  margin: 3.5px 14.4px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #1C1C1E;
+}
+.cta {
+  border-radius: 12px;
+  background: #FF630B;
+  margin: 27.5px 0;
+  padding: 12px 20px;
+  width: 174px;
+  box-sizing: border-box;
+}
+
+.frame51 {
+  position: relative;
+  margin-bottom: 65px;
+  width: 400px;
+  height: 964px;
+}
+.frame37 {
+  border-bottom: 1px solid #D8D3CC;
+  background: #FFFFFF;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: -110px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 19px 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+.frame40 {
+  margin: 0 40px 20px 40px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.frame39 {
+  margin-right: 71.9px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.frame13 {
+  border-radius: 100px;
+  background: url('/assets/Chrissie.png') 50% / cover no-repeat;
+  margin-right: 24px;
+  width: 80px;
+  height: 80px;
+}
+.frame38 {
+  margin: 14px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.chrissielee {
+  margin-bottom: 4px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #1C1C1E;
+}
+.client {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #9D9C9C;
+}
+.icdotsvertical {
+  margin: 33.3px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.7px;
+  height: 13.3px;
+  box-sizing: border-box;
+}
+.line1 {
+  background: #D8D3CC;
+  margin-bottom: 19px;
+  width: 400px;
+  height: 1px;
+}
+.frame46 {
+  margin: 0 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.contactinformation {
+  margin-bottom: 20px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #9D9C9C;
+}
+.frame44 {
+  margin-left: 1.7px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.frame42 {
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 282.5px;
+  box-sizing: border-box;
+}
+.frame48 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.icmessages {
+  margin: 3.3px 9.7px 2.3px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 16.7px;
+  height: 13.3px;
+  box-sizing: border-box;
+}
+.email {
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #9D9C9C;
+}
+.chrissieleegmailcom {
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #1C1C1E;
+}
+.fram-43 {
+  margin: 0 0.8px 21px 0.8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 238.2px;
+  box-sizing: border-box;
+}
+.frame47 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.icphone {
+  margin: 2.1px 10.1px 1.4px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 15.5px;
+  height: 15.5px;
+  box-sizing: border-box;
+}
+.phone {
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #9D9C9C;
+}
+.numb1 {
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #1C1C1E;
+}
+.frame4422 {
+  margin-left: 1.7px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.frame4823 {
+  margin: 0 30.6px 38px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.icpin {
+  margin: 1.7px 11.3px 0.7px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 13.3px;
+  height: 16.7px;
+  box-sizing: border-box;
+}
+.address {
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #9D9C9C;
+}
+.california {
+  overflow-wrap: break-word;
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #1C1C1E;
+}
+
+.frame43 {
+    margin: 0 0.8px 21px 0.8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 238.2px;
+    box-sizing: border-box;
+  }
