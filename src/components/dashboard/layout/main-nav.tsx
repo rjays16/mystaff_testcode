@@ -17,8 +17,40 @@ import { SignOut as SignOutIcon } from '@phosphor-icons/react/dist/ssr/SignOut';
 import { MobileNav } from './mobile-nav';
 import { UserPopover } from './user-popover';
 
+import RouterLink from 'next/link';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { paths } from '@/paths';
+import { authClient } from '@/lib/auth/client';
+import { logger } from '@/lib/default-logger';
+import { useUser } from '@/hooks/use-user';
+
 export function MainNav(): React.JSX.Element {
   const [openNav, setOpenNav] = React.useState<boolean>(false);
+  const { checkSession } = useUser();
+
+  const router = useRouter();
+
+  const handleSignOut = React.useCallback(async (): Promise<void> => {
+    try {
+      const { error } = await authClient.signOut();
+
+      if (error) {
+        logger.error('Sign out error', error);
+        return;
+      }
+
+      // Refresh the auth state
+      await checkSession?.();
+
+      // UserProvider, for this case, will not refresh the router and we need to do it manually
+      router.refresh();
+      // After refresh, AuthGuard will handle the redirect
+    } catch (err) {
+      logger.error('Sign out error', err);
+    }
+  }, [checkSession, router]);
+
 
   const userPopover = usePopover<HTMLDivElement>();
 
@@ -75,33 +107,38 @@ export function MainNav(): React.JSX.Element {
               />
             </Tooltip>
 
-            <Tooltip title="Settings">
+            <Tooltip title="Notifications">
               <Box
               component="img"
               src="/assets/notification.png"
-              sx={{ height: 'auto', width: '40px' }}
+              sx={{ cursor: 'pointer', height: 'auto', width: '40px' }}
               />
             </Tooltip>
-           <Tooltip title="Settings">
-              <Box
-              component="img"
-              src="/assets/settings-menu.png"
-              sx={{ height: 'auto', width: '40px' }}
-              />
-            </Tooltip>
-
-            <Tooltip title="Logout" >
-              <Box 
-              component="img"
-              src="/assets/logout.png"
-              sx={{ height: 'auto', width: '40px' }}
-              />
-            </Tooltip>
-            
-          
-          </Stack>
-        </Stack>
-      </Box>
+            <Tooltip title="Settings">
+              <Link href={paths.dashboard.settings}>
+                <Box
+                component="a"
+                sx={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', }}
+                >
+                  <img
+                  src="/assets/settings-menu.png"
+                  alt="Settings"
+                  style={{ height: 'auto', width: '40px' }}
+                  />
+                  </Box>
+                  </Link>
+                  </Tooltip>
+                  <Tooltip title="Logout" >
+                    <Box 
+                    component="img"
+                    onClick={handleSignOut}
+                    src="/assets/logout.png"
+                    sx={{ cursor: 'pointer', height: 'auto', width: '40px' }}
+                    />
+                    </Tooltip>
+                    </Stack>
+                    </Stack>
+                    </Box>
       <UserPopover anchorEl={userPopover.anchorRef.current} onClose={userPopover.handleClose} open={userPopover.open} />
       <MobileNav
         onClose={() => {
