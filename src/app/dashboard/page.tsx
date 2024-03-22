@@ -13,11 +13,48 @@ export const metadata = { title: `Home | Dashboard | ${config.site.name}` } sati
 const sidebarData = [
   {
     "veterinary_name": "Chrissie Lee",
+    "email": "chrissielee@gmail.com",
     "address": "1st Avenue, Golden Street, Springville Village, San Diego, California",
     "type": "Client",
     "building": "Green Bow Vett",
     "contact_number": "+01 234 567 8910",
     "image": "/Chrissie"
+  },
+  {
+    "veterinary_name": "Danica Jane",
+    "address": "4517 Washington Avenue, Manchester, Kentucky 39495",
+    "type": "Manager",
+    "email": " danicajane@gmail.com",
+    "building": "Green Bow Vett",
+    "contact_number": "+01 234 567 8910",
+    "image": "/Danica"
+  },
+  {
+    "veterinary_name": "John Fins",
+    "email": "johnfins8123@gmail.com",
+    "address": "4517 Washington Avenue, Manchester, Kentucky 39495",
+    "type": "Client",
+    "building": "Green Bow Vett",
+    "contact_number": "+01 234 567 8910",
+    "image": "/John"
+  },
+  {
+    "veterinary_name": "John Newton",
+    "email": "johnnewton@gmail.com",
+    "address": "4517 Washington Avenue, Manchester, Kentucky 39495",
+    "type": "Client",
+    "building": "Green Bow Vett",
+    "contact_number": "+01 234 567 8910",
+    "image": "/John"
+  },
+  {
+    "veterinary_name": "Leonardo Caprio",
+    "email": "leonardo@gmail.com",
+    "address": "4517 Washington Avenue, Manchester, Kentucky 39495",
+    "type": "Client",
+    "building": "Green Bow Vett",
+    "contact_number": "+01 234 567 8910",
+    "image": "/leonardo"
   },
 ];
 

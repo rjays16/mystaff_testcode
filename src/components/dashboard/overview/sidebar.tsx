@@ -164,7 +164,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                     letterSpacing: '0.3px',
                     color: '#1C1C1E',
                   }}>
-                    {item.contact_number}
+                    {item.email}
                   </span>
                 </Box>
                 <Box sx={{
