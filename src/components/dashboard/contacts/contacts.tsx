@@ -1,10 +1,10 @@
 import * as React from 'react';
-
+import Box from '@mui/material/Box';
 export default function Contacts(): React.JSX.Element {
   return (
-    <div>
+    <Box>
       Contacts Page
-    </div>
+    </Box>
   );
 }
 
