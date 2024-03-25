@@ -145,7 +145,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                       height: '13.3px',
                       boxSizing: 'border-box',
                     }}>
-                      <img src="/assets/email.png" />
+                      <img src="/assets/email.png" alt='Email'/>
                     </Box>
                     <span style={{
                       overflowWrap: 'break-word',
@@ -192,7 +192,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                       height: '15.5px',
                       boxSizing: 'border-box',
                     }}>
-                      <img src='/assets/phone.png' />
+                      <img src='/assets/phone.png' alt='Phone'/>
                     </Box>
                     <span style={{
                       overflowWrap: 'break-word',
@@ -238,7 +238,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                       height: '16.7px',
                       boxSizing: 'border-box',
                     }}>
-                      <img src="/assets/address.png" />
+                      <img src="/assets/address.png" alt='Address'/>
                     </Box>
                     <span style={{
                       overflowWrap: 'break-word',
