@@ -5,6 +5,6 @@ export const navIcons: Record<string, string> = {
   'contacts': '/assets/contacts.png',
   'data-analytics': '/assets/data_analytics.png',
   'subscription': '/assets/subsciption.png',
-  'help-center': '/assets/help_center.png',
+  'helpcenter': '/assets/helpcenter.png',
   'settings': '/assets/settings.png',
 };

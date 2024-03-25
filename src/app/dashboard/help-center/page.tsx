@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Unstable_Grid2';
 import { config } from '@/config';
-import Help from "@/components/dashboard/help/help_center"
+import Help from "@/components/dashboard/help/help-center"
 export const metadata = { title: `Messages | Dashboard | ${config.site.name}` } satisfies Metadata;
 export default function Page(): React.JSX.Element {
   return (

@@ -8,6 +8,6 @@ export const navItems = [
   { key: 'contacts', title: 'Contacts', href: paths.dashboard.contacts, icon: 'contacts' },
   { key: 'analytics', title: 'Data Analytics', href: paths.dashboard.analytics, icon: 'data-analytics' },
   { key: 'subscription', title: 'Subscription', href: paths.dashboard.subscription, icon: 'subscription' },
-  { key: 'help_center', title: 'Help Center', href: paths.dashboard.help_center, icon: 'help-center' },
+  { key: 'helpcenter', title: 'Help Center', href: paths.dashboard.helpcenter, icon: 'helpcenter' },
   { key: 'settings', title: 'Settings', href: paths.dashboard.settings, icon: 'settings' },
 ] satisfies NavItemConfig[];
