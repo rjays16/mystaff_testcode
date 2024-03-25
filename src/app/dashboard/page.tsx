@@ -1,14 +1,25 @@
 import * as React from 'react';
 import type { Metadata } from 'next';
-import Grid from '@mui/material/Grid'; 
+import Grid from '@mui/material/Grid'; // Import Grid from @mui/material
 import dayjs from 'dayjs';
 
 import { config } from '@/config';
 import { Calendar } from '@/components/dashboard/overview/calendar';
 import { Top } from '@/components/dashboard/overview/top';
-import Sidebar from '@/components/dashboard/overview/sidebar';
+import Sidebar from '@/components/dashboard/overview/sidebar'; // Import Sidebar component
 
 export const metadata = { title: `Home | Dashboard | ${config.site.name}` } satisfies Metadata;
+
+type SidebarData = {
+  veterinary_name: string;
+  email: string;
+  address: string;
+  type: string;
+  building: string;
+  contact_number: string;
+  image: string; 
+};
+
 
 const sidebarData = [
   {
