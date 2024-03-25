@@ -194,7 +194,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                     }}>
                       <img src='/assets/phone.png' />
                     </Box>
-                    <span stle={{
+                    <span style={{
                       overflowWrap: 'break-word',
                       fontFamily: 'Urbanist',
                       fontWeight: 500,
