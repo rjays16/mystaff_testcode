@@ -14,11 +14,10 @@ import { navIcons } from './nav-icons';
 export function SideNav(): React.JSX.Element {
   const pathname = usePathname();
 
-  const [isNavOpen, setIsNavOpen] = React.useState(true); // State to manage nav visibility
+  const [isNavOpen, setIsNavOpen] = React.useState(true);
 
   const toggleNavVisibility = () => {
     setIsNavOpen(!isNavOpen);
-
   };
 
   return (
@@ -53,7 +52,7 @@ export function SideNav(): React.JSX.Element {
       <Box
   sx={{
     alignItems: 'center',
-    justifyContent: 'space-between', // Adjusted to align items on both ends
+    justifyContent: 'space-between', 
     backgroundColor: 'var(--mui-palette-neutral-950)',
     borderRadius: '12px',
     cursor: 'pointer',
