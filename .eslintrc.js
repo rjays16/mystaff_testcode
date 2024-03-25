@@ -22,13 +22,14 @@ module.exports = {
     },
   },
   rules: {
+    'no-console': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
         ignoreRestSiblings: true,
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-        caughtErrorsIgnorePattern: '^_',
+        // argsIgnorePattern: '^_',
+        // varsIgnorePattern: '^_',
+        // caughtErrorsIgnorePattern: '^_',
       },
     ],
     '@typescript-eslint/no-empty-interface': [
@@ -43,7 +44,7 @@ module.exports = {
         ignoreOnInitialization: true,
       },
     ],
-    'import/newline-after-import': 'error',
+    // 'import/newline-after-import': 'error',
     'react/jsx-uses-react': 'error',
     'react/react-in-jsx-scope': 'error',
     'unicorn/filename-case': [
