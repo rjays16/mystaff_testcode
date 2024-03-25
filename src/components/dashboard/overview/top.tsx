@@ -8,10 +8,11 @@ export function Top(): React.JSX.Element {
     const currentDate = new Date();
     const [currentDateState, setCurrentDateState] = React.useState(currentDate);
     const [openModal, setOpenModal] = React.useState(false);
-    const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+   
+    const options: Intl.DateTimeFormatOptions = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
     const formattedDate = currentDateState.toLocaleDateString(undefined, options);
 
-    const monthOptions = { month: 'long' };
+    const monthOptions: Intl.DateTimeFormatOptions = { month: 'long' };
     const currentMonth = currentDateState.toLocaleDateString(undefined, monthOptions);
 
     const handleOpenModal = () => {
