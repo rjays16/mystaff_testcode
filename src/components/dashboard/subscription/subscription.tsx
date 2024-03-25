@@ -1,10 +1,11 @@
 import * as React from 'react';
+import Box from '@mui/material/Box';
 
 export default function Subscription(): React.JSX.Element {
   return (
-    <div>
+    <Box>
       Subscription Page
-    </div>
+    </Box>
   );
 }
 
