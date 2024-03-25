@@ -56,7 +56,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
               }}>
                 <Box sx={{
                   borderRadius: '100px',
-                  background: `url("/assets/${item.image}.png") 50% / cover no-repeat`,
+                  background: `url("/assets/${item.image}) 50% / cover no-repeat`,
                   marginRight: '24px',
                   width: '80px',
                   height: '80px',
