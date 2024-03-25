@@ -1,15 +1,11 @@
 import * as React from 'react';
 import type { Metadata } from 'next';
 import Grid from '@mui/material/Grid'; 
-import dayjs from 'dayjs';
-
 import { config } from '@/config';
 import { Calendar } from '@/components/dashboard/overview/calendar';
 import { Top } from '@/components/dashboard/overview/top';
 import Sidebar from '@/components/dashboard/overview/sidebar'; 
-
 export const metadata = { title: `Home | Dashboard | ${config.site.name}` } satisfies Metadata;
-
 const sidebarData = [
   {
     "veterinary_name": "Chrissie Lee",
@@ -57,7 +53,6 @@ const sidebarData = [
     "image": "/assets/leonardo.png"
   },
 ];
-
 export default function Page(): React.JSX.Element {
   return (
     <Grid container spacing={2}> 
