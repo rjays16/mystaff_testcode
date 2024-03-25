@@ -14,9 +14,11 @@ interface SidebarData {
 
 interface SidebarProps {
   data: SidebarData[];
+  filteredData: SidebarData[];
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ data }) => {
+const Sidebar: React.FC<SidebarProps> = ({ data, filteredData }) => {
+  const renderData = filteredData.length ? filteredData : data;
   return (
     <Box sx={{
       position: 'relative',
@@ -38,6 +40,11 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
         height: '100%',
         boxSizing: 'border-box',
       }}>
+        {renderData.map((item, index) => (
+          <React.Fragment key={index}>
+            {/* Render each item */}
+          </React.Fragment>
+        ))}
         {data.map((item, index) => (
           <React.Fragment key={index}>
             <Box sx={{
