@@ -18,7 +18,7 @@ const sidebarData = [
     "type": "Client",
     "building": "Green Bow Vett",
     "contact_number": "+01 234 567 8910",
-    "image": "/Chrissie.png"
+    "image": "/assets/Chrissie.png"
   },
   {
     "veterinary_name": "Danica Jane",
@@ -27,7 +27,7 @@ const sidebarData = [
     "email": " danicajane@gmail.com",
     "building": "Green Bow Vett",
     "contact_number": "+01 234 567 8910",
-    "image": "/Danica.png"
+    "image": "/assets/Danica.png"
   },
   {
     "veterinary_name": "John Fins",
@@ -36,7 +36,7 @@ const sidebarData = [
     "type": "Client",
     "building": "Green Bow Vett",
     "contact_number": "+01 234 567 8910",
-    "image": "/John.png"
+    "image": "/assets/John.png"
   },
   {
     "veterinary_name": "John Newton",
@@ -45,7 +45,7 @@ const sidebarData = [
     "type": "Client",
     "building": "Green Bow Vett",
     "contact_number": "+01 234 567 8910",
-    "image": "/John.png"
+    "image": "/assets/John.png"
   },
   {
     "veterinary_name": "Leonardo Caprio",
@@ -54,7 +54,7 @@ const sidebarData = [
     "type": "Client",
     "building": "Green Bow Vett",
     "contact_number": "+01 234 567 8910",
-    "image": "/leonardo.png"
+    "image": "/assets/leonardo.png"
   },
 ];
 
