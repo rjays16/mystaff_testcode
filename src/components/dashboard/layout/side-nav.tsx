@@ -132,6 +132,7 @@ function renderNavItems({ items = [], pathname, isNavOpen }: { items?: NavItemCo
 
 interface NavItemProps extends Omit<NavItemConfig, 'items'> {
   pathname: string;
+  isNavOpen: boolean;
 }
 
 function NavItem({ disabled, external, href, icon, matcher, pathname, title, isNavOpen }: NavItemProps): React.JSX.Element {

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import type { Metadata } from 'next';
-import Grid from '@mui/material/Grid'; // Import Grid from @mui/material
+import Grid from '@mui/material/Grid'; 
 import dayjs from 'dayjs';
 
 import { config } from '@/config';
 import { Calendar } from '@/components/dashboard/overview/calendar';
 import { Top } from '@/components/dashboard/overview/top';
-import Sidebar from '@/components/dashboard/overview/sidebar'; // Import Sidebar component
+import Sidebar from '@/components/dashboard/overview/sidebar';
 
 export const metadata = { title: `Home | Dashboard | ${config.site.name}` } satisfies Metadata;
 
