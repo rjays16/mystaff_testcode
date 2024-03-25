@@ -4,10 +4,12 @@ import Divider from '@mui/material/Divider';
 
 interface SidebarData {
   veterinary_name: string;
+  email: string;
   address: string;
+  type: string;
   building: string;
   contact_number: string;
-  type: string;
+  image: string; 
 }
 
 interface SidebarProps {

@@ -10,17 +10,6 @@ import Sidebar from '@/components/dashboard/overview/sidebar'; // Import Sidebar
 
 export const metadata = { title: `Home | Dashboard | ${config.site.name}` } satisfies Metadata;
 
-type SidebarData = {
-  veterinary_name: string;
-  email: string;
-  address: string;
-  type: string;
-  building: string;
-  contact_number: string;
-  image: string; 
-};
-
-
 const sidebarData = [
   {
     "veterinary_name": "Chrissie Lee",
