@@ -23,7 +23,7 @@ const sidebarData = [
     "email": " danicajane@gmail.com",
     "building": "Green Bow Vett",
     "contact_number": "+01 234 567 8910",
-    "image": "/assets/Danica.png"
+    "image": "/assets/danica.png"
   },
   {
     "veterinary_name": "John Fins",
