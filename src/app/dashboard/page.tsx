@@ -5,7 +5,6 @@ import { config } from '@/config';
 import { Calendar } from '@/components/dashboard/overview/calendar';
 import { Top } from '@/components/dashboard/overview/top';
 import Sidebar from '@/components/dashboard/overview/sidebar'; 
-import { useState } from 'react';
 export const metadata = { title: `Home | Dashboard | ${config.site.name}` } satisfies Metadata;
 const sidebarData = [
   {
@@ -55,14 +54,6 @@ const sidebarData = [
   },
 ];
 export default function Page(): React.JSX.Element {
-  const [searchQuery, setSearchQuery] = useState('');
-
-  const filteredData = sidebarData.filter(item =>
-    Object.values(item).some(field =>
-      field.toLowerCase().includes(searchQuery.toLowerCase())
-    )
-  );
-
   return (
     <Grid container spacing={2}> 
       <Grid item lg={8} md={12} xs={12} sx={{ height: '100%' }}>
@@ -70,7 +61,7 @@ export default function Page(): React.JSX.Element {
         <Calendar />
       </Grid>
       <Grid item lg={4} md={12} xs={12}> 
-        <Sidebar data={sidebarData} filteredData={filteredData}/>
+        <Sidebar data={sidebarData}/> 
       </Grid>
     </Grid>
   );
