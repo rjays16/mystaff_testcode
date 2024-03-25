@@ -11,6 +11,7 @@ import type { NavItemConfig } from '@/types/nav';
 import { isNavItemActive } from '@/lib/is-nav-item-active';
 import { navItems } from './config';
 import { navIcons } from './nav-icons';
+
 export function SideNav(): React.JSX.Element {
   const pathname = usePathname();
 
