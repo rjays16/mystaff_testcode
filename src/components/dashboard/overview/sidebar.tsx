@@ -147,7 +147,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                     }}>
                       <img src="/assets/email.png" />
                     </Box>
-                    <span sx={{
+                    <span style={{
                       overflowWrap: 'break-word',
                       fontFamily: 'Urbanist',
                       fontWeight: 500,
@@ -158,7 +158,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                       Email
                     </span>
                   </Box>
-                  <span sx={{
+                  <span style={{
                     overflowWrap: 'break-word',
                     fontFamily: 'Urbanist',
                     fontWeight: 500,
@@ -194,7 +194,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                     }}>
                       <img src='/assets/phone.png' />
                     </Box>
-                    <span sx={{
+                    <span stle={{
                       overflowWrap: 'break-word',
                       fontFamily: 'Urbanist',
                       fontWeight: 500,
@@ -205,7 +205,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                       Phone
                     </span>
                   </Box>
-                  <span sx={{
+                  <span style={{
                     overflowWrap: 'break-word',
                     fontFamily: 'Urbanist',
                     fontWeight: 500,
@@ -240,7 +240,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                     }}>
                       <img src="/assets/address.png" />
                     </Box>
-                    <span sx={{
+                    <span style={{
                       overflowWrap: 'break-word',
                       fontFamily: 'Urbanist',
                       fontWeight: 500,
@@ -251,7 +251,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data }) => {
                       Address
                     </span>
                   </Box>
-                  <span sx={{
+                  <span style={{
                     overflowWrap: 'break-word',
                     fontFamily: 'Urbanist',
                     fontWeight: 500,
