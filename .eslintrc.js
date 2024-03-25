@@ -43,14 +43,13 @@ module.exports = {
         ignoreOnInitialization: true,
       },
     ],
-    'import/newline-after-import': 'error',
     'react/jsx-uses-react': 'error',
     'react/react-in-jsx-scope': 'error',
     'unicorn/filename-case': [
       'error',
       {
         cases: {
-          kebabCase: true, // personal style
+          kebabCase: true, 
           pascalCase: true,
         },
       },
