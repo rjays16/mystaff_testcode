@@ -4,7 +4,8 @@ import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Unstable_Grid2';
 
 import { config } from '@/config';
-// 
+
+
 import Analytics from "@/components/dashboard/analytics/analytics"
 export const metadata = { title: `Messages | Dashboard | ${config.site.name}` } satisfies Metadata;
 
