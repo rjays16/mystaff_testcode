@@ -7,13 +7,10 @@ import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
 import type { NavItemConfig } from '@/types/nav';
 import { isNavItemActive } from '@/lib/is-nav-item-active';
-
 import { navItems } from './config';
 import { navIcons } from './nav-icons';
-
 export function SideNav(): React.JSX.Element {
   const pathname = usePathname();
 
@@ -23,6 +20,7 @@ export function SideNav(): React.JSX.Element {
     setIsNavOpen(!isNavOpen);
 
   };
+
   return (
     <Box
       sx={{
